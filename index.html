@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Engr.Emmanuel">
+    <meta name="description" content="This is the official website for Maverick Dresses">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maverick Dresses</title>
+    <link rel="icon" href="images/maverick.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ee41b6fbeb.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="main-container">
+
+        <!-- This section was built for both the desktop and mobile navigation of mavericks website -->
+        <header>
+            <!-- This section was built for the desktop navigation of mavericks website -->
+            <nav class="desktop-nav-area">
+                <div class="nav-container">
+                    <div class="logo">
+                        <img src="images/maverick.ico" alt="Maverick Dresses">
+                        <p class="logo-text">Maverick Dresses</p>
+
+
+                    </div>
+                    <div class="desktop-nav-links">
+                        <ul>
+                            <li><a href="#products-section">Products</a></li>
+                            <li><a href="#about-us">About Us</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                            <li><a href="#feedback">Feedback</a></li>
+                            <li><a href="#site-map">Site Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+
+            <!-- This section was built for the mobile navigation of mavericks website -->
+            <nav class="mobile-nav-area">
+                <div class="mobile-nav-container">
+                    <div class="mobile-logo">
+                        <img src="images/maverick.ico" alt="Maverick Dresses">
+                        <p class="logo-text">Maverick Dresses</p>
+                    </div>
+                    <div>
+                        <button id="mobile-menu"><i id="open-menu" class="fa-solid fa-bars"></i><i id="close-menu"
+                                class="fa-solid fa-x"></i></button>
+
+                    </div>
+
+                </div>
+
+                <div class="mobile-nav-links-container">
+                    <div id="mobile-nav-links">
+                        <ul style="list-style-type: none; padding-top: 20px; padding-bottom: 20px;">
+                            <li><a href="#products-section" onclick="moveMenuBack()">Products</a></li>
+                            <li><a href="#about-us" onclick="moveMenuBack()">About Us</a></li>
+                            <li><a href="#gallery" onclick="moveMenuBack()">Gallery</a></li>
+                            <li><a href="#contact-us" onclick="moveMenuBack()">Contact Us</a></li>
+                            <li><a href="#feedback" onclick="moveMenuBack()">Feedback</a></li>
+                            <li><a href="#site-map" onclick="moveMenuBack()">Site Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+        <br>
+
+        <!-- This section was built for the main content of mavericks website -->
+        <main>
+            <!-- This is the hero section of mavericks website -->
+            <section id="hero-section">
+                <div class="hero-content">
+                    <h3 class="hero-text1">The Home of Quality Uniforms</h3><br><br>
+                    <p class="hero-text2">Maverick Dresses is a leading uniform manufacturer providing high-quality,
+                        affordable and durable school uniforms to all students. We combine comfort, style and excellence
+                        in every stitch. </p>
+                    <br><br>
+                    <button id="view-products"
+                        style="border: none; padding: 10px; border-radius: 5px; font-size: large; font-weight: bold; cursor: pointer;"><a
+                            style="text-decoration: none; color: rgb(36, 35, 35);" href="#products-section">View Products</a></button>
+                </div>
+            </section>
+            <br><br>
+
+            <!-- PRODUCT SECTION -->
+            <section id="products-section">
+                <div class="products-container">
+                    <button id="all-products" class="product-btn">All Products</button>
+
+                    <button id="boys-uniforms" class="product-btn">Boys Uniforms</button>
+                    <button id="girls-uniforms" class="product-btn">Girls Uniforms</button>
+                    <button id="accessories" class="product-btn">Accessories</button>
+                </div>
+                <div class="image-holder-container" style="background-color: #edf5f8; margin-top: 10px; padding-top: 5px; padding-bottom: 5px;">
+                    <div id="all-image-holder">
+
+                    </div>
+
+                    <div id="boys-image-holder" class="boys-image">
+
+                    </div>
+
+                    <div id="girls-image-holder" class="girls-image">
+
+                    </div>
+
+                    <div id="accessories-image-holder" class="accessories-image">
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- GALLERY SECTION -->
+            <section id="gallery">
+                <h2 class="gallery-title">Our Gallery</h2>
+                <p class="gallery-description">Explore some of our best uniform collections in action.</p>
+                <div class="gallery-container">
+                    
+                    <div class="gallery-item">
+                        <img src="images/galleryImg1.jpg" alt="Gallery Image 1" class="gallery-image">
+                        <div class="gallery-item-content">
+                            <h3 class="gallery-item-title">Classic Uniforms</h3>
+                            <p class="gallery-item-text">Durable and comfortable designs tailored for everyday school life and excellence.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/galleryImg2.jpg" alt="Gallery Image 2" class="gallery-image">
+                        <div class="gallery-item-content">
+                            <h3 class="gallery-item-title">Premium Sportswear</h3>
+                            <p class="gallery-item-text">High-performance, breathable gear built to withstand the rigors of active students.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/galleryImg3.jpg" alt="Gallery Image 3" class="gallery-image">
+                        <div class="gallery-item-content">
+                            <h3 class="gallery-item-title">School Accessories</h3>
+                            <p class="gallery-item-text">Complete your academic look with our top-quality, stylish school accessories.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section><br><br>
+
+            <!-- ABOUT US SECTION  -->
+            <section id="about-us">
+                
+                    <div class="about-us-title">
+                        <h2>About Maverick Dresses</h2>
+                    </div>
+                    <div class="about-us-container">
+                        <div class="about-us-details-container">
+                            <div class="about-us-details">
+                                <img class="about-us-image1" src="images/aboutus1.jpg" width="400" height="230" alt="About us image">
+                                <p>Maverick Dresses is a leading uniform manufacturing company providing high-quality school
+                                    uniforms for boys and girls. With a strong commitment to excellence, we design and produce
+                                    uniforms that combine comfort, durability, and style.</p>
+                                <div class="about-us-details2">
+                                    <img class="about-us-image2" src="images/aboutus2.jpg" width="400" height="230" alt="About us image 2">
+                                    <p>We offer a wide range of products including school uniforms, sportswear, and accessories. Our products are made from high-quality materials and are designed to last. We also offer a wide range of sizes and styles to choose from. </p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section><br><br>
+
+
+
+            <section id="contact-us">
+                <h2 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 2rem; color: #4d4c4c; margin-bottom: 20px;">Contact Us</h2>
+
+                <div class="contact-container">
+
+                    <!-- LEFT FORM -->
+                    <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+
+                    <form action="mailto:emmanuelukachi60@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                    </div>
+
+                    <!-- RIGHT INFO and MAP -->
+                    <div class="contact-info">
+
+                    <div class="info">
+                        <h3 style="color: #4d4c4c;">Our Office</h3>
+                        <p style="color: #4d4c4c;"><strong>Address:</strong> 30 Shonibare St, Ikate, Lagos 101241, Lagos</p>
+
+                        <p>
+                        <strong style="color: #4d4c4c;">Email:</strong> 
+                        <a style="color: rgb(78, 78, 78);" href="mailto:emmanuelukachi60@gmail.com">
+                            maverick.com
+                        </a>
+                        </p>
+
+                        <p style="color: #4d4c4c;"><strong>Phone:</strong> +234 800 000 0000</p>
+                    </div>
+
+                    <!-- MAP -->
+                    <div class="map">
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126850.88300657178!2d3.2050895690917893!3d6.510279718882122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c3b33fb82df%3A0x1f5b786f91704156!2sMaverick%20Nigeria%20Limited!5e0!3m2!1sen!2sng!4v1777390307200!5m2!1sen!2sng" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    </div>
+
+                </div>
+            </section>
+            
+                    
+        </main>
+
+       
+
+        <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/maverick.ico" alt="Maverick Dresses">
+                <p class="footer-logo-text">Maverick Dresses</p>
+                <p class="footer-about">Providing high-quality, affordable and durable school uniforms to all students since our inception. We combine comfort, style and excellence in every stitch.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Site Map</h3>
+                <ul>
+                    <li><a href="#products-section">Products</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Maverick Dresses. All Rights Reserved.</p>
+        </div>
+    </footer>
+    </div>
+
+    
+
+    <script>
+
+        let imageContainer = document.getElementById("all-image-holder");
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                data.AllProducts.forEach(sd => {
+                    imageContainer.innerHTML += `
+                        <div class= "card">
+                            <img src= "images/${sd.image}" width= "150">
+                            <br>
+                            <h3 class="card-name">${sd.name}</h3>
+                            <p class="card-price">$${sd.price}</p>
+                        </div>
+                    `
+                })
+            })
+
+        let allProductsBtn = document.getElementById("all-products");
+
+        let boysProductsButton = document.getElementById("boys-uniforms");
+        let boysImageContainer = document.getElementById("boys-image-holder");
+
+        let girlsProductsButton = document.getElementById("girls-uniforms");
+        let girlsImageContainer = document.getElementById("girls-image-holder");
+
+        let accessoriesButton = document.getElementById("accessories");
+        let accessoriesImageContainer = document.getElementById("accessories-image-holder");
+
+        allProductsBtn.addEventListener("click", () => {
+            boysImageContainer.style.display = "none";
+            girlsImageContainer.style.display = "none";
+            accessoriesImageContainer.style.display = "none";
+            imageContainer.style.display = "";
+
+            fetch('products.json')
+                .then(response => response.json())
+                .then(data => {
+                    imageContainer.innerHTML = '';
+                    data.AllProducts.forEach(sd => {
+                        imageContainer.innerHTML += `
+                        <div class= "card">
+                            <img src= "images/${sd.image}" width= "150">
+                            <br>
+                            <h3 class="card-name">${sd.name}</h3>
+                            <p class="card-price">$${sd.price}</p>
+                        </div>
+                     `
+                    })
+                })
+        })
+
+
+
+
+        boysProductsButton.addEventListener("click", () => {
+            imageContainer.style.display = "none";
+            girlsImageContainer.style.display = "none";
+            accessoriesImageContainer.style.display = "none";
+            boysImageContainer.style.display = "";
+
+            fetch('products.json')
+                .then(response => response.json())
+                .then(data => {
+                    boysImageContainer.innerHTML = '';
+                    data.BoysProducts.forEach(sd => {
+                        boysImageContainer.innerHTML += `
+                            <div class= "card">
+                                <img src= "images/${sd.image}" width= "150">
+                                <br>
+                                <h3 class="card-name">${sd.name}</h3>
+                                <p class="card-price">$${sd.price}</p>
+                            </div>
+                        `
+                    })
+                })
+        })
+
+        girlsProductsButton.addEventListener("click", () => {
+            imageContainer.style.display = "none";
+            boysImageContainer.style.display = "none";
+            accessoriesImageContainer.style.display = "none";
+            girlsImageContainer.style.display = "";
+
+            fetch('products.json')
+                .then(response => response.json())
+                .then(data => {
+                    girlsImageContainer.innerHTML = '';
+                    data.GirlsProducts.forEach(sd => {
+                        girlsImageContainer.innerHTML += `
+                            <div class= "card">
+                                <img src= "images/${sd.image}" width= "150">
+                                <br>
+                                <h3 class="card-name">${sd.name}</h3>
+                                <p class="card-price">$${sd.price}</p>
+                            </div>
+                        `
+                    })
+                })
+        })
+
+        accessoriesButton.addEventListener("click", () => {
+            imageContainer.style.display = "none";
+            boysImageContainer.style.display = "none";
+            girlsImageContainer.style.display = "none";
+            accessoriesImageContainer.style.display = "";
+
+            fetch('products.json')
+                .then(response => response.json())
+                .then(data => {
+                    accessoriesImageContainer.innerHTML = '';
+                    data.Accessories.forEach(sd => {
+                        accessoriesImageContainer.innerHTML += `
+                            <div class= "card">
+                                <img src= "images/${sd.image}" width= "150">
+                                <br>
+                                <h3 class="card-name">${sd.name}</h3>
+                                <p class="card-price">$${sd.price}</p>
+                            </div>
+                        `
+                    })
+                })
+        })
+        
+
+        /* This section was built for the mobile navigation of mavericks website */
+        const menuButton = document.getElementById("mobile-menu");
+        const mobilelinks = document.getElementById("mobile-nav-links");
+        const openMenu = document.getElementById("open-menu");
+        const closeMenu = document.getElementById("close-menu");
+        let isRunning = false;
+        menuButton.addEventListener("click", function () {
+            if (!isRunning) {
+                openMenu.style.display = "none"
+                closeMenu.style.display = "block"
+                mobilelinks.style.right = "0px"
+                mobilelinks.style.transition = "all 0.5s"
+                isRunning = true;
+            } else {
+                openMenu.style.display = "block"
+                closeMenu.style.display = "none"
+                mobilelinks.style.right = "-300px"
+                mobilelinks.style.transition = "all 0.5s"
+                isRunning = false;
+            }
+        });
+
+        function moveMenuBack() {
+            openMenu.style.display = "block"
+            closeMenu.style.display = "none"
+            mobilelinks.style.right = "-300px"
+            mobilelinks.style.transition = "all 0.5s"
+            isRunning = false;
+        }
+
+
+    </script>
+</body>
+
+</html>

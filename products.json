@@ -1,0 +1,256 @@
+{
+    "AllProducts":[
+        {
+            "name": "Classic Polo s6 edition",
+            "price": 500,
+            "image": "polo1.jpg"
+        },
+        {
+            "name": "Maverick custom Tie striped",
+            "price": 272,
+            "image": "tie3.jpg"
+        },
+        {
+            "name": "Maverick custom Hoodie",
+            "price": 4670,
+            "image": "hoodie1.jpg"
+        },
+        {
+            "name": "Maverick custom Tie black",
+            "price": 150,
+            "image": "tie1.jpg"
+        },
+        {
+            "name": "Cotton Polo e1 edition",
+            "price": 422,
+            "image": "polo5.jpg"
+        },
+        {
+            "name": "Slim Fit Shirt a1 edition",
+            "price": 720,
+            "image": "shirt1.jpg"
+        },
+        {
+            "name": "Slim Fit Shirt a2 edition",
+            "price": 745,
+            "image": "shirt2.jpg"
+        },
+        {
+            "name": "Maverick custom Tie",
+            "price": 220,
+            "image": "tie2.jpg"
+        },
+        {
+            "name": "Cotton Shirt c2 edition",
+            "price": 612,
+            "image": "shirt5.jpg"
+        },
+        {
+            "name": "Unisex Shirt f1 edition",
+            "price": 900,
+            "image": "unisexShirt1.jpg"
+        },
+        {
+            "name": "Smart Casual Shirt b1 edition",
+            "price": 720,
+            "image": "girlsShirt1.jpg"
+        },
+        {
+            "name": "Light sweater",
+            "price": 1200,
+            "image": "girlsShirt2.jpg"
+        },
+           {
+            "name": "Striped Shirt g1 edition",
+            "price": 420,
+            "image": "girlsShirt3.jpg"
+        },
+        {
+            "name": "plain Sweatshirt",
+            "price": 520,
+            "image": "sweatshirt.jpg"
+        },
+        
+        {
+            "name": "Modern fit suit",
+            "price": 3000,
+            "image": "suit1.jpg"
+        },
+        {
+            "name": "Slim Fit Skirt",
+            "price": "465",
+            "image": "skirt1.jpg"
+        },
+        {
+            "name": "Maverick custom Skirt",
+            "price": "500",
+            "image": "skirt2.jpg"
+        },
+        {
+            "name": "Maverick custom Shorts",
+            "price": "600",
+            "image": "skirt3.jpg"
+        } 
+    ],
+    "BoysProducts":[
+        {
+            "name": "Classic Polo s6 edition",
+            "price": 500,
+            "image": "polo1.jpg"
+        },
+        {
+            "name": "Casual Polo d3 edition",
+            "price": 272,
+            "image": "polo2.jpg"
+        },
+        {
+            "name": "Maverick custom Hoodie",
+            "price": 4670,
+            "image": "hoodie1.jpg"
+        },
+        {
+            "name": "Plain Polo c3 edition",
+            "price": 378,
+            "image": "polo4.jpg"
+        },
+        {
+            "name": "Cotton Polo e1 edition",
+            "price": 422,
+            "image": "polo5.jpg"
+        },
+        {
+            "name": "Slim Fit Shirt a1 edition",
+            "price": 720,
+            "image": "shirt1.jpg"
+        },
+        {
+            "name": "Maverick custom Tie black",
+            "price": 150,
+            "image": "tie1.jpg"
+        },
+        {
+            "name": "Maverick custom Tie blue",
+            "price": 170,
+            "image": "tie2.jpg"
+        },
+        {
+            "name": "Slim Fit Shirt a2 edition",
+            "price": 745,
+            "image": "shirt2.jpg"
+        },
+        {
+            "name": "Modern fit suit",
+            "price": 3000,
+            "image": "suit1.jpg"
+        }
+    ],
+    "GirlsProducts":[
+        {
+            "name": "Maverick custom Tie striped",
+            "price": 272,
+            "image": "tie3.jpg"
+        },
+        {
+            "name": "Cotton Shirt c2 edition",
+            "price": 612,
+            "image": "shirt5.jpg"
+        },
+        {
+            "name": "Unisex Shirt f1 edition",
+            "price": 900,
+            "image": "unisexShirt1.jpg"
+        },
+        {
+            "name": "Smart Casual Shirt b1 edition",
+            "price": 720,
+            "image": "girlsShirt1.jpg"
+        },
+        {
+            "name": "Light sweater",
+            "price": 1200,
+            "image": "girlsShirt2.jpg"
+        },
+        {
+            "name": "Striped Shirt g1 edition",
+            "price": 420,
+            "image": "girlsShirt3.jpg"
+        },
+        {
+            "name": "Maverick custom Hoodie",
+            "price": 4670,
+            "image": "hoodie1.jpg"
+        },
+        {
+            "name": "Maverick custom Tie striped",
+            "price": 272,
+            "image": "tie3.jpg"
+        },
+        {
+            "name": "Slim Fit Skirt",
+            "price": "465",
+            "image": "skirt1.jpg"
+        },
+        {
+            "name": "Maverick custom Skirt",
+            "price": "500",
+            "image": "skirt2.jpg"
+        },
+        {
+            "name": "Maverick custom Shorts",
+            "price": "600",
+            "image": "skirt3.jpg"
+        }
+    ],
+    "Accessories":[
+        {
+            "name": "Maverick light glasses",
+            "price": 170,
+            "image": "glasses1.jpg"
+        },
+        {
+            "name": "Maverick rayban glasses",
+            "price": 188,
+            "image": "glasses2.jpg"
+        },
+        {
+            "name": "Maverick ultra wave glasses",
+            "price": 200,
+            "image": "glasses3.jpg"
+        },
+        {
+            "name": "Maverick edge wrist watch",
+            "price": 785,
+            "image": "watch1.jpg"
+        },
+        {
+            "name": "Maverick classic wrist watch",
+            "price": 1005,
+            "image": "watch2.jpg"
+        },
+        {
+            "name": "Maverick screen wrist watch",
+            "price": 1125,
+            "image": "watch3.jpg"
+        },
+        {
+            "name": "Maverick screen wrist watch",
+            "price": 1005,
+            "image": "watch4.jpg"
+        },
+        {
+            "name": "Maverick custom belt",
+            "price": 1505,
+            "image": "belt1.jpg"
+        },
+        {
+            "name": "Maverick leather belt",
+            "price": 805,
+            "image": "belt2.jpg"
+        },
+        {
+            "name": "Maverick leather belt",
+            "price": 739,
+            "image": "belt3.jpg"
+        }
+    ]
+}
