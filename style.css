@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     overflow-x: hidden;
+}
+
+body {
     position: relative;
 }
 
@@ -22,22 +25,24 @@ body {
 
 #mobile-nav-links {
     /* display: none; */
+    overflow: hidden;
+    overflow-y: auto;
     border: 2px solid beige;
     border-radius: 5px;
     background-color: black;
     width: 250px;
-    height: 500px;
-    position: absolute;
+    height: 700px;
+    position: fixed;
     padding-left: 20px;
     top: 90px;
     right: -300px;
-    z-index: 1;
+    z-index: 100;
     display: none;
 }
 
 #mobile-nav-links ul li {
     font-size: 1.2rem;
-    line-height: 80px;
+    line-height: 110px;
 }
 
 #mobile-nav-links ul li a {
@@ -304,13 +309,7 @@ body {
     color: #272727;
 }
 
-/* .contact-us-title h2{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2rem;
-}
-.map iframe{
-    border-radius: 5px;
-} */
+
 
 #contact {
     padding: 60px 20px;
@@ -518,16 +517,24 @@ body {
 }
 
 @media (max-width: 600px) {
-    .mobile-nav-area {
+    
+     .mobile-nav-area {
         display: block;
-    }
+    } 
 
-    #mobile-nav-links {
+     #mobile-nav-links {
+        display: block;
+        
+    } 
+
+    #mobile-nav-links{
         display: block;
     }
 
     #mobile-nav-links ul li a {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
+        
+        letter-spacing: 2px;
     }
 
     .nav-container {

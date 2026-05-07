@@ -42,7 +42,7 @@
             </nav>
 
             <!-- This section was built for the mobile navigation of mavericks website -->
-            <nav class="mobile-nav-area">
+            <nav style="background-color: white; position: fixed; top: 0; width: 98%; padding-bottom: 5px;" class="mobile-nav-area">
                 <div class="mobile-nav-container">
                     <div class="mobile-logo">
                         <img src="images/maverick.ico" alt="Maverick Dresses">
@@ -58,7 +58,9 @@
 
                 <div class="mobile-nav-links-container">
                     <div id="mobile-nav-links">
+                        
                         <ul style="list-style-type: none; padding-top: 20px; padding-bottom: 20px;">
+                            
                             <li><a href="#products-section" onclick="moveMenuBack()">Products</a></li>
                             <li><a href="#about-us" onclick="moveMenuBack()">About Us</a></li>
                             <li><a href="#gallery" onclick="moveMenuBack()">Gallery</a></li>
@@ -235,7 +237,7 @@
                 <p class="footer-logo-text">Maverick Dresses</p>
                 <p class="footer-about">Providing high-quality, affordable and durable school uniforms to all students since our inception. We combine comfort, style and excellence in every stitch.</p>
             </div>
-            <div class="footer-links">
+            <div id="site-map" class="footer-links">
                 <h3>Site Map</h3>
                 <ul>
                     <li><a href="#products-section">Products</a></li>
@@ -408,15 +410,6 @@
                 isRunning = false;
             }
         });
-
-        function moveMenuBack() {
-            openMenu.style.display = "block"
-            closeMenu.style.display = "none"
-            mobilelinks.style.right = "-300px"
-            mobilelinks.style.transition = "all 0.5s"
-            isRunning = false;
-        }
-
 
     </script>
 </body>
