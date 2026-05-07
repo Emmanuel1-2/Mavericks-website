@@ -42,7 +42,7 @@ body {
 
 #mobile-nav-links ul li {
     font-size: 1.2rem;
-    line-height: 110px;
+    line-height: 85px;
 }
 
 #mobile-nav-links ul li a {
@@ -370,7 +370,7 @@ body {
 }
 
 .contact-form button:hover {
-    background: #e6b800;
+    background: rgb(48, 48, 48);
 }
 
 /* INFO */
