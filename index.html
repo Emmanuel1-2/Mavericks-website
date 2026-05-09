@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ee41b6fbeb.js" crossorigin="anonymous"></script>
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMQWY86GPT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EMQWY86GPT');
+    </script>
+
 </head>
 
 <body>
@@ -254,6 +263,12 @@
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
+
+                <br>
+                <div>
+                    <div id="clock"></div>
+                </div>
+
             </div>
         </div>
         <div class="footer-bottom">
@@ -266,6 +281,94 @@
 
     <script>
 
+        let clock = document.getElementById("clock");
+        let hour = new Date().getHours();
+        let minutes = new Date().getMinutes();
+        let seconds = new Date().getSeconds();
+        let timer;
+        let day = new Date().getDay();
+        let date = new Date().getDate();
+        let month = new Date().getMonth();
+        let year = new Date().getFullYear();
+        
+
+       
+        setInterval(() => {
+        hour = new Date().getHours().toString().padStart(2, '0');
+        minutes = new Date().getMinutes().toString().padStart(2, '0');
+        seconds = new Date().getSeconds().toString().padStart(2, '0');
+        day = new Date().getDay()
+         switch(day){
+            case 0: 
+            day = "Sunday";
+            break;
+            case 1: 
+            day = "Monday";
+            break;
+            case 2: 
+            day = "Tuesday";
+            break;
+            case 3: 
+            day = "Wednesday";
+            break;
+            case 4: 
+            day = "Thursday";
+            break;
+            case 5: 
+            day = "Friday";
+            break;
+            case 6: 
+            day = "Saturday";
+            break;
+        }
+
+        date = new Date().getDate()
+        month = new Date().getMonth()
+        switch(month){
+            case 0: 
+            month = "January";
+            break;
+            case 1: 
+            month = "February";
+            break;
+            case 2: 
+            month = "March";
+            break;
+            case 3: 
+            month = "April";
+            break;
+            case 4: 
+            month = "May";
+            break;
+            case 5: 
+            month = "June";
+            break;
+            case 6: 
+            month = "July";
+            break;
+            case 7: 
+            month = "August";
+            break;
+            case 8: 
+            month = "September";
+            break;
+            case 9: 
+            month = "October";
+            break;
+            case 10: 
+            month = "November";
+            break;
+            case 11: 
+            month = "December";
+            break;
+        }
+        year = new Date().getFullYear()
+        timer = `${day}: ${date}th: ${month}: ${year} - ${hour}: ${minutes}: ${seconds}`;
+        clock.innerHTML = timer;
+        }, 1000);
+        
+
+        console.log(hour, minutes, seconds)
         let imageContainer = document.getElementById("all-image-holder");
         fetch('products.json')
             .then(response => response.json())
