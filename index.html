@@ -1,16 +1,48 @@
+<!--
+  Maverick Dresses — Official Website
+  Author:       Engr. Emmanuel
+  Description:  Single-page website for Maverick Dresses, a school uniform
+                manufacturing company. The site includes:
+                  - Hero banner with call-to-action
+                  - Product catalog with category filtering (All, Boys, Girls, Accessories)
+                  - Image gallery showcasing collections
+                  - About Us company overview
+                  - Contact form with embedded Google Map
+                  - Footer with site map, social links, and live clock
+
+  Tech Stack:
+    - HTML5 / CSS3 (style.css)
+    - Vanilla JavaScript (inline <script> at bottom of <body>)
+    - Font Awesome 6 (icons via CDN)
+    - Google Analytics (gtag.js)
+    - Product data loaded from products.json via Fetch API
+
+  File Structure:
+    index.html      — This file (markup + scripts)
+    style.css       — All external styles
+    products.json   — Product catalog data (AllProducts, BoysProducts, GirlsProducts, Accessories)
+    images/         — All image assets (product photos, gallery, about-us, favicon)
+-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="author" content="Engr.Emmanuel">
     <meta name="description" content="This is the official website for Maverick Dresses">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maverick Dresses</title>
+
+    <!--  Favicon & Stylesheets  -->
     <link rel="icon" href="images/maverick.ico">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome — Provides icon fonts -->
     <script src="https://kit.fontawesome.com/ee41b6fbeb.js" crossorigin="anonymous"></script>
 
+    <!--  Google Analytics  -->
+    <!-- Tracks page views and site traffic -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMQWY86GPT"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -86,7 +118,11 @@
 
         <!-- This section was built for the main content of mavericks website -->
         <main>
-            <!-- This is the hero section of mavericks website -->
+
+            <!--  1. HERO SECTION  -->
+            <!-- Landing banner introducing the brand. Contains:
+                  Headline & descriptive paragraph
+                  "View Products" CTA button that scrolls down to #products-section -->
             <section id="hero-section">
                 <div class="hero-content">
                     <h3 class="hero-text1">The Home of Quality Uniforms</h3><br><br>
@@ -101,35 +137,46 @@
             </section>
             <br><br>
 
-            <!-- PRODUCT SECTION -->
+            <!--  2. PRODUCTS SECTION  -->
+            <!-- Filterable product catalog. How it works:
+                 - Four category buttons let the user switch between product views.
+                 - Each button triggers a JS click handler (see <script> below) that:
+                      Hides all other image-holder containers.
+                      Fetches products.json and reads the matching category array.
+                      Renders product cards into the visible container.
+                 - On page load, "All Products" are fetched and displayed by default.
+
+                 DOM containers:
+                   #all-image-holder          — All Products
+                   #boys-image-holder         — Boys Uniforms
+                   #girls-image-holder        — Girls Uniforms
+                   #accessories-image-holder  — Accessories
+            -->
             <section id="products-section">
+                <!-- Category filter buttons -->
                 <div class="products-container">
                     <button id="all-products" class="product-btn">All Products</button>
-
                     <button id="boys-uniforms" class="product-btn">Boys Uniforms</button>
                     <button id="girls-uniforms" class="product-btn">Girls Uniforms</button>
                     <button id="accessories" class="product-btn">Accessories</button>
                 </div>
+
+                <!-- Product card containers — populated dynamically by JavaScript -->
                 <div class="image-holder-container" style="background-color: #edf5f8; margin-top: 10px; padding-top: 5px; padding-bottom: 5px;">
                     <div id="all-image-holder">
-
                     </div>
-
                     <div id="boys-image-holder" class="boys-image">
-
                     </div>
-
                     <div id="girls-image-holder" class="girls-image">
-
                     </div>
-
                     <div id="accessories-image-holder" class="accessories-image">
-
                     </div>
                 </div>
             </section>
 
-            <!-- GALLERY SECTION -->
+            <!--  3. GALLERY SECTION  -->
+            <!-- Displays three image cards showcasing uniform collections.
+                 Each card has an image and descriptive text overlay. -->
             <section id="gallery">
                 <h2 class="gallery-title">Our Gallery</h2>
                 <p class="gallery-description">Explore some of our best uniform collections in action.</p>
@@ -162,7 +209,9 @@
                 </div>
             </section><br><br>
 
-            <!-- ABOUT US SECTION  -->
+            <!--  4. ABOUT US SECTION  -->
+            <!-- Company overview with two images and descriptive paragraphs.
+                 Provides visitors with background on Maverick Dresses' mission and products. -->
             <section id="about-us">
                 
                     <div class="about-us-title">
@@ -187,12 +236,16 @@
 
 
 
+            <!--  5. CONTACT US SECTION  -->
+            <!-- Two-column layout:
+                 Left  — Contact form (Name, Email, Message) that submits via mailto:
+                 Right — Office address, email, phone number, and an embedded Google Map -->
             <section id="contact-us">
                 <h2 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 2rem; color: #4d4c4c; margin-bottom: 20px;">Contact Us</h2>
 
                 <div class="contact-container">
 
-                    <!-- LEFT FORM -->
+                    <!-- Contact Form (left column) -->
                     <div id="feedback" class="contact-form">
                     <h3>Send Us a Message</h3>
 
@@ -205,7 +258,7 @@
                     </form>
                     </div>
 
-                    <!-- RIGHT INFO and MAP -->
+                    <!-- Office Info & Map (right column) -->
                     <div class="contact-info">
 
                     <div class="info">
@@ -222,7 +275,7 @@
                         <p style="color: #4d4c4c;"><strong>Phone:</strong> +234 800 000 0000</p>
                     </div>
 
-                    <!-- MAP -->
+                    <!-- Embedded Google Map showing office location -->
                     <div class="map">
                         
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126850.88300657178!2d3.2050895690917893!3d6.510279718882122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c3b33fb82df%3A0x1f5b786f91704156!2sMaverick%20Nigeria%20Limited!5e0!3m2!1sen!2sng!4v1777390307200!5m2!1sen!2sng" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -238,7 +291,14 @@
 
        
 
-        <!-- Footer Section -->
+        <!--  
+             FOOTER
+             Three-column layout:
+               1. Brand logo + description
+               2. Site Map — quick navigation links
+               3. Social media icons + live clock
+             Bottom bar displays copyright notice.
+ -->
     <footer class="footer-section">
         <div class="footer-container">
             <div class="footer-logo">
@@ -278,9 +338,16 @@
     </div>
 
     
-
+    
     <script>
 
+        /* 
+           1. LIVE CLOCK
+           Displays the current day, date, month, year, and time.
+           Updates every 1 second via setInterval.
+           Output format: "Monday: 11th: May: 2026 - 14: 30: 45"
+           Rendered into the #clock element in the footer.
+         */
         let clock = document.getElementById("clock");
         let hour = new Date().getHours();
         let minutes = new Date().getMinutes();
@@ -368,8 +435,19 @@
         }, 1000);
         
 
-        console.log(hour, minutes, seconds)
+        /* 
+           2. PRODUCT CATALOG
+           - On page load: fetches products.json and renders ALL products.
+           - Category buttons: each button hides every other container,
+             shows its own, fetches the JSON, and renders matching cards.
+           - Product data keys in products.json:
+               AllProducts, BoysProducts, GirlsProducts, Accessories
+           - Each product object has: { name, price, image }
+         */
+
         let imageContainer = document.getElementById("all-image-holder");
+
+        
         fetch('products.json')
             .then(response => response.json())
             .then(data => {
@@ -396,6 +474,7 @@
         let accessoriesButton = document.getElementById("accessories");
         let accessoriesImageContainer = document.getElementById("accessories-image-holder");
 
+        // "All Products" button handler 
         allProductsBtn.addEventListener("click", () => {
             boysImageContainer.style.display = "none";
             girlsImageContainer.style.display = "none";
@@ -422,6 +501,7 @@
 
 
 
+        // "Boys Uniforms" button handler
         boysProductsButton.addEventListener("click", () => {
             imageContainer.style.display = "none";
             girlsImageContainer.style.display = "none";
@@ -445,6 +525,7 @@
                 })
         })
 
+        // "Girls Uniforms" button handler
         girlsProductsButton.addEventListener("click", () => {
             imageContainer.style.display = "none";
             boysImageContainer.style.display = "none";
@@ -468,6 +549,7 @@
                 })
         })
 
+        // "Accessories" button handler
         accessoriesButton.addEventListener("click", () => {
             imageContainer.style.display = "none";
             boysImageContainer.style.display = "none";
@@ -492,20 +574,37 @@
         })
         
 
-        /* This section was built for the mobile navigation of mavericks website */
+        /* 
+           3. MOBILE NAVIGATION TOGGLE
+           Controls the slide-in/out behavior of the mobile menu panel.
+
+           How it works:
+             - The hamburger button (#mobile-menu) toggles the menu.
+             - When OPENED:  the menu slides in from the right (right: 0px),
+               the hamburger icon (fa-bars) is hidden, and the X icon (fa-x) is shown.
+             - When CLOSED:  the menu slides off-screen (right: -300px),
+               the X icon is hidden, and the hamburger icon is restored.
+             - isRunning tracks the current open/closed state.
+             - moveMenuBack() is called by each nav link's onclick to
+               auto-close the menu after the user taps a link.
+         */
         const menuButton = document.getElementById("mobile-menu");
         const mobilelinks = document.getElementById("mobile-nav-links");
         const openMenu = document.getElementById("open-menu");
         const closeMenu = document.getElementById("close-menu");
-        let isRunning = false;
+        let isRunning = false; // Tracks whether the mobile menu is currently open
+
+        // Toggle menu open/closed on hamburger button click
         menuButton.addEventListener("click", function () {
             if (!isRunning) {
+                // Open the menu
                 openMenu.style.display = "none"
                 closeMenu.style.display = "block"
                 mobilelinks.style.right = "0px"
                 mobilelinks.style.transition = "all 0.5s"
                 isRunning = true;
             } else {
+                // Close the menu
                 openMenu.style.display = "block"
                 closeMenu.style.display = "none"
                 mobilelinks.style.right = "-300px"
@@ -514,6 +613,11 @@
             }
         });
 
+        /**
+         * moveMenuBack()
+         * Called by each mobile nav link's onclick attribute.
+         * Closes the mobile menu after the user selects a navigation item.
+         */
         function moveMenuBack() {
             openMenu.style.display = "block"
             closeMenu.style.display = "none"
